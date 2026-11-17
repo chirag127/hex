@@ -327,6 +327,7 @@ impl WindowsDesktopHost {
             | Request::SetShortcut { .. }
             | Request::AnswerConsent { .. }
             | Request::RecordControl { .. }
+            | Request::RevokePermission { .. }
             | Request::RevokeRecordGrant { .. } => {}
         }
         false
