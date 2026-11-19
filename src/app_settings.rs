@@ -32,7 +32,9 @@ pub(crate) use persistence::LaunchLoad;
 pub(crate) use persistence::LaunchNote;
 mod shortcut_repair;
 
-pub use browser_origins::{normalize_browser_origins, parse_browser_origins};
+pub use browser_origins::{
+    normalize_browser_origin, normalize_browser_origins, parse_browser_origins,
+};
 #[cfg(hex_capture)]
 pub use capture::*;
 pub use dictation_processing::{

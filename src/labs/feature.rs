@@ -67,6 +67,7 @@ pub enum Feature {
     ApiProcessing,
     ApiTimestamps,
     ApiBrowserAccess,
+    ConnectedApps,
     SpeakersOnly,
     CalendarMenu,
     MoreDictationShortcuts,
@@ -83,7 +84,7 @@ pub enum Feature {
 }
 
 impl Feature {
-    pub const ALL: [Self; 75] = [
+    pub const ALL: [Self; 76] = [
         Self::Meetings,
         Self::VoiceFilter,
         Self::Playground,
@@ -146,6 +147,7 @@ impl Feature {
         Self::ApiProcessing,
         Self::ApiTimestamps,
         Self::ApiBrowserAccess,
+        Self::ConnectedApps,
         Self::SpeakersOnly,
         Self::CalendarMenu,
         Self::MoreDictationShortcuts,
